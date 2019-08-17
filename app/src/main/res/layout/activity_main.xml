@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập ID" />
+
+    <EditText
+        android:id="@+id/edtTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên" />
+
+    <EditText
+        android:id="@+id/edtTuoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tuổi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnthemsv"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/btnsua"
+            android:layout_width="540px"
+            android:layout_height="wrap_content"
+            android:text="Sửa" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtSearchID"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="Nhập ID tìm kiếm" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSapxep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sắp xếp theo tuổi"
+        android:textAllCaps="false" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="15sp"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tên"
+            android:textSize="15sp"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tuổi"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>
