@@ -59,6 +59,7 @@ public class SinhvienDAO {
             sinhvienList.add(sinhvien);
             cursor.moveToNext();
         }
+        cursor.close();
         return sinhvienList;
     }
 
